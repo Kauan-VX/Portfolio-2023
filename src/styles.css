@@ -1,0 +1,239 @@
+/* Global Style */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    background: #2d3550;
+}
+
+.sub-title {
+    color: rgba(255, 197, 82, 0.721);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+
+.title {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 0.5rem;
+    margin: 2rem 0rem 2rem 0rem;
+}
+
+
+ul li {
+    list-style: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* End Global Style */
+
+/* ScroolBar */
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 197, 82, 0.721);
+    border-radius: 40px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 197, 82, 0.800);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* End ScrollBar */
+
+/* Media Queries */
+
+
+@media (max-width: 1050px) {
+    section .container {
+        flex-direction: column;
+    }
+
+    section img {
+        order: -1;
+    }
+
+    nav #left-nav {
+        width: 40vw;
+    }
+
+    section #button {
+        width: 35%;
+
+    }
+
+    section #card-about {
+        width: 50%;
+    }
+}
+
+@media (max-width: 950px) {
+    nav {
+        display: none;
+    }
+
+
+    .one,
+    .two,
+    .three {
+        background-color: #fff;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+
+        transition-duration: 0.3s;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 30px;
+        margin-right: 20px;
+    }
+
+    /* fullscreen */
+    .menu-section.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100vw;
+        height: 100vh;
+
+        background: #424769;
+
+        z-index: 10;
+
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .menu-section.on nav {
+        display: block;
+    }
+
+    .menu-section {
+        justify-content: right !important;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center;
+        font-size: 4rem;
+        font-weight: 600;
+        color: white;
+    }
+
+    .menu-section.on .menu-toggle {
+        position: absolute;
+        right: 18px;
+        top: 15rem;
+    }
+
+    .menu-section.on .menu-toggle .one {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .menu-section.on .menu-toggle .two {
+        opacity: 0;
+    }
+
+    .menu-section.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(8px, -9px);
+    }
+
+    .menu-section.on nav ul {
+        text-align: center;
+        display: block;
+    }
+
+    .menu-section.on nav ul a {
+        transition-duration: 0.5s;
+        font-size: 3rem;
+        line-height: 10rem !important;
+        display: block;
+    }
+
+    section #card-about {
+        width: 60%;
+    }
+
+    footer #ul-footer {
+        width: 30%;
+    }
+
+    #logo {
+        width: 160%;
+    }
+
+
+
+}
+
+@media (max-width: 770px) {
+    section #card-about {
+        width: 80%;
+    }
+
+    #logo {
+        width: 220%;
+    }
+}
+
+@media (max-width: 650px) {
+    #logo {
+        width: 200%;
+    }
+
+    footer #ul-footer {
+        width: 40%;
+    }
+
+}
+
+@media (max-width: 480px) {
+    section #card-about {
+        width: 90%;
+    }
+
+    #logo {
+        width: 250%;
+    }
+
+    footer #ul-footer {
+        width: 50%;
+    }
+
+    #card-link {
+        width: 80%;
+    }
+
+}
+
+/* End Media Queries */
