@@ -22,7 +22,7 @@ export class NavbarComponent implements AfterViewInit {
     const menuToggle = this.menuToggleRef.nativeElement as HTMLElement;
 
     menuToggle.addEventListener("click", () => {
-      document.body.style.overflow = this.show ? "initial" : "hidden";
+      menuSection.style.overflow = this.show ? "hidden" : "visible";
       menuSection.classList.toggle("on", this.show);
       this.show = !this.show;
     });

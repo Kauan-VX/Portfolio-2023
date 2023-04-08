@@ -202,28 +202,37 @@ html {
     }
 
     #logo {
-        width: 220%;
+        width: 150%;
     }
+
+    #card{
+        width: 70%;
+            }
 }
 
 @media (max-width: 650px) {
     #logo {
-        width: 200%;
+        width: 160%;
     }
 
     footer #ul-footer {
         width: 40%;
     }
 
+    #card{
+width: 80%;
+    }
+    
+
 }
 
 @media (max-width: 480px) {
     section #card-about {
-        width: 90%;
+        width: 100%;
     }
 
     #logo {
-        width: 250%;
+        width: 60vw;
     }
 
     footer #ul-footer {
@@ -231,7 +240,11 @@ html {
     }
 
     #card-link {
-        width: 80%;
+        width: 100%;
+    }
+
+  #card {
+        width: 90%;
     }
 
 }
