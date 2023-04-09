@@ -96,7 +96,6 @@ html {
         display: none;
     }
 
-
     .one,
     .two,
     .three {
@@ -104,7 +103,6 @@ html {
         height: 5px;
         width: 100%;
         margin: 6px auto;
-
         transition-duration: 0.3s;
     }
 
@@ -119,21 +117,17 @@ html {
         position: absolute;
         top: 0;
         left: 0;
-
         width: 100vw;
         height: 100vh;
-
         background: #424769;
-
         z-index: 10;
-
         display: flex;
         justify-content: center !important;
         align-items: center !important;
     }
 
     .menu-section.on nav {
-        display: block;
+        display: inline-block;
     }
 
     .menu-section {
@@ -148,12 +142,13 @@ html {
         font-size: 4rem;
         font-weight: 600;
         color: white;
+        margin-right: 5rem !important;
     }
 
     .menu-section.on .menu-toggle {
         position: absolute;
         right: 18px;
-        top: 15rem;
+        top: 5rem;
     }
 
     .menu-section.on .menu-toggle .one {
@@ -191,9 +186,6 @@ html {
     #logo {
         width: 160%;
     }
-
-
-
 }
 
 @media (max-width: 770px) {
@@ -205,9 +197,9 @@ html {
         width: 150%;
     }
 
-    #card{
+    #card {
         width: 70%;
-            }
+    }
 }
 
 @media (max-width: 650px) {
@@ -219,11 +211,9 @@ html {
         width: 40%;
     }
 
-    #card{
-width: 80%;
+    #card {
+        width: 80%;
     }
-    
-
 }
 
 @media (max-width: 480px) {
@@ -243,10 +233,16 @@ width: 80%;
         width: 100%;
     }
 
-  #card {
+    #card {
         width: 90%;
     }
 
+}
+
+@media (max-width: 390px) {
+    section #button {
+        width: 50%;
+    }
 }
 
 /* End Media Queries */
